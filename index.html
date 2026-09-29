@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teacher's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hearts">
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+    </div>
+
+    <div class="main-container">
+
+        <div class="heading">
+            <h1>Happy Teachers DAY Po!!</h1>
+            <p>Click the envelope to open your letter</p>
+        </div>
+
+        <div class="envelope-area" id="envelopeArea">
+
+            <div class="envelope" id="envelope">
+
+                <div class="back"></div>
+
+                <div class="letter" id="letter">
+                    <div class="letter-content">
+
+                        <div class="top-heart">♥</div>
+
+                        <img src="tcday.jpg" alt="Teacher">
+
+                        <h2>Happy Teachers Day Po Ulet</h2>
+
+                        <h3>Dear Ma'am Mari,</h3>
+
+                        <p>
+                            THANK YOU FOR YOUR GRACIOUS TEACHING MAAM MARI,
+                            FOR TEACHING US SOMETHING THAT WE DIDN'T EVEN KNOW
+                            AND FOR THE PATIENCE THAT YOU ALWAYS CARRY THROUGH
+                            EVERY CLASS.
+                        </p>
+
+                        <div class="message-heart">♥</div>
+
+                        <h3 class="thank-you">
+                            Thank you, Ma'am!
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="front"></div>
+                <div class="flap"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const envelope = document.getElementById("envelope");
+        const envelopeArea = document.getElementById("envelopeArea");
+
+        envelope.addEventListener("click", function () {
+            envelope.classList.toggle("open");
+            envelopeArea.classList.toggle("opened");
+        });
+    </script>
+
+</body>
+</html>
